@@ -1,8 +1,13 @@
+//Use in Firefox Chrome is shit
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './Login';      // Startseiten-Komponente
-import AGB from './Agb.js';       // AGB-Komponente
+import Login from './Login';      
+import AGB from './Agb.js';       
 import Register from './register.js';
+import Impressum from './Impressum.js';
+import Home from './Home.js';
+import Rueckgabe from './Rueckgabe_mieter.js';
+import Rueckgabe_Ver from './Rueckgabe_vermieter.js';
 
 function App() {
   return (
@@ -11,9 +16,13 @@ function App() {
 
         {/* Routen definieren */}
         <Routes>
-          <Route path="/login" element={<Login />} /> {/* Startseite */}
-          <Route path="/agb" element={<AGB />} /> {/* AGB-Seite */}
-          <Route path="/register" element={<Register />} /> {/* AGB-Seite */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/agb" element={<AGB />} /> 
+          <Route path="/register" element={<Register />} /> 
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/rueckgabe" element={<Rueckgabe />} />  
+          <Route path="/rueckgabe_intern" element={<Rueckgabe_Ver />} />  
         </Routes>
       </div>
     </Router>

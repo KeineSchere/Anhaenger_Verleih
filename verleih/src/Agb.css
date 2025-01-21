@@ -37,22 +37,3 @@
   bottom: 0;
   width: 100%;
 }
-
-.footer a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer ul li {
-  display: inline;
-  margin: 0 10px;
-}
