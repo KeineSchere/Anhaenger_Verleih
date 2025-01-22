@@ -17,7 +17,7 @@ const RueckgabeMieter = () => {
     ruecknahmeStatus: 'nicht zurückgenommen',
     schadenStatus: 'keine Schäden',
   });
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Rückgabeprotokoll für den Mieter wurde abgeschickt!');
@@ -31,7 +31,32 @@ const RueckgabeMieter = () => {
     setUnterschrift(e.target.value);
   };
 
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+  }
+
   return (
+    <div>
+    <div className="app">
+      {/* Button zum Öffnen/Schließen der Seitenleiste */}
+      <button className="sidebar-toggle" onClick={toggleSidebar}>
+        ☰
+      </button>
+
+      {/* Seitenleiste */}
+      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+        <nav>
+          <ul>
+            <li></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="rueckgabe">Rückgabe</a></li>
+            <li><a href="mieten">Mieten</a></li>
+            <li><a href="sonstiges">Sonstiges</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
     <div className="rueckgabe-container">
       <h1>Rückgabeprotokoll für PKW-Anhänger</h1>
 
@@ -102,6 +127,7 @@ const RueckgabeMieter = () => {
           <li><a href="/agb">AGB</a></li>
         </ul>
       </footer>
+    </div>
     </div>
   );
 };
