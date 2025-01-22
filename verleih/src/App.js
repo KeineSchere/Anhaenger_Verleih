@@ -8,6 +8,8 @@ import Impressum from './Impressum.js';
 import Home from './Home.js';
 import Rueckgabe from './Rueckgabe_mieter.js';
 import Rueckgabe_Ver from './Rueckgabe_vermieter.js';
+import Mieten from './Mieten.js';
+import Sonstiges from './Sonstiges.js';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/rueckgabe" element={<Rueckgabe />} />  
           <Route path="/rueckgabe_intern" element={<Rueckgabe_Ver />} />  
+          <Route path="/mieten" element={<Mieten />} />
+          <Route path="/sonstiges" element={<Sonstiges />} />
         </Routes>
       </div>
     </Router>
