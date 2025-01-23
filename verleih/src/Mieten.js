@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Mieten.css";
+import "./CSS/Mieten.css";
 
 const App = () => {
     const [selectedTrailer, setSelectedTrailer] = useState(null);

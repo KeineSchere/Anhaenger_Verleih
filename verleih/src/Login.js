@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Login.css'; // Optionales CSS für das Styling
+import Footer from'./footer.js';
+import './CSS/Login.css'; // Optionales CSS für das Styling
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -7,6 +8,7 @@ function Login() {
 
   // Diese Funktion wird beim Absenden des Formulars aufgerufen
   const handleSubmit = (e) => {
+    <a href="/home"></a>
     e.preventDefault();  // Verhindert das Neuladen der Seite
 
     // Hier kannst du Logik für das Formular hinzufügen
@@ -28,6 +30,7 @@ function Login() {
               placeholder="Benutzername eingeben"
               value={username}
               onChange={(e) => setUsername(e.target.value)}  // Speichert den Benutzernamen im Zustand
+              required
             />
           </div>
 
@@ -40,6 +43,7 @@ function Login() {
               placeholder="Passwort eingeben"
               value={password}
               onChange={(e) => setPassword(e.target.value)}  // Speichert das Passwort im Zustand
+              required
             />
           </div>
 
@@ -51,14 +55,7 @@ function Login() {
           <p>Noch kein Konto? <a href="/register">Registrieren</a></p>
         </div>
       </div>
-
-      {/* Fußzeile außerhalb des Containers */}
-      <footer className="footer">
-        <ul>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/agb">AGB</a></li>
-        </ul>
-      </footer>
+      <Footer />
     </div>
   );
 }

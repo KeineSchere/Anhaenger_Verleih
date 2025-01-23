@@ -35,7 +35,6 @@ body {
   
   /* Eingabefelder */
   .input-group {
-    width: 100%;          /* Breite der Eingabefelder */
     margin-bottom: 15px;
   }
   
@@ -47,7 +46,6 @@ body {
   }
   
   .input-group input {
-    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
@@ -93,36 +91,5 @@ body {
     text-decoration: underline;
   }
 
-  /* Fußzeile */
-.footer {
-    background-color: #333;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: white;  /* Weiße Schriftfarbe in der Fußzeile */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  
+
+
