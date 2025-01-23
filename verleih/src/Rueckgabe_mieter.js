@@ -1,6 +1,6 @@
 // src/RueckgabeMieter.js
 import React, { useState } from 'react';
-import './Rueckgabe_mieter.css';
+import './CSS/Rueckgabe_mieter.css';
 
 const RueckgabeMieter = () => {
   // States für die Rückgabe-Protokoll-Daten

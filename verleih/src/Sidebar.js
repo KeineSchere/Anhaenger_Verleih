@@ -1,17 +1,14 @@
-//Sonstiges
 import React, { useState } from "react";
-import Footer from'./footer.js';
-import './CSS/Home.css';
+import './CSS/Sidebar.css';
 
-const Startseite = () => {
+const Sidebar = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
-    const toggleSidebar = () => {
+    const toggleSidebar = () => 
+    {
         setSidebarOpen(!isSidebarOpen);
-      };
-
-return (
-    <div>
-    <div className="app">
+    };
+    return(
+        <div>
       {/* Button zum Öffnen/Schließen der Seitenleiste */}
       <button className="sidebar-toggle" onClick={toggleSidebar}>
         ☰
@@ -30,9 +27,6 @@ return (
         </nav>
       </div>
       </div>
-      <Footer />
-    </div>
-);
-}
-
-export default Startseite;
+    );
+};
+export default Sidebar;

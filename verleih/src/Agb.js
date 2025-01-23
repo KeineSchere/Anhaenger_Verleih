@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './Agb.css';  // Optional: Styling für die AGB-Seite
+import './CSS/Agb.css';  // Optional: Styling für die AGB-Seite
+import Sidebar from './Sidebar';
 
 const AGB = () => {
-
-
   return (
+    <div>
+      <Sidebar/>
     <div className="agb-container">
       <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
       <div className="agb-content">
@@ -26,6 +27,7 @@ const AGB = () => {
           <li><a href="/impressum">Impressum</a></li>
         </ul>
       </footer>
+    </div>
     </div>
   );
 };

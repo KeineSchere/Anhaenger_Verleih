@@ -7,23 +7,25 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh; /* Stellt sicher, dass der Body immer die volle Höhe des Viewports einnimmt */
 }
 /* Container für das Login */
 .login-container {
   width: 300px;            /* Feste Breite auf 300px */
-  margin: 20px auto;       /* Zentriert den Container auf der Seite */
+  margin: auto;       /* Zentriert den Container auf der Seite */
   padding: 20px;
   background-color: #3e3e3e;  /* Helleres Grau für das Login-Formular */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
   display: flex;              /* Flexbox aktivieren */
   flex-direction: column;     /* Vertikale Ausrichtung der Kinder */
   justify-content: center;    /* Zentriert die Inhalte vertikal */
   align-items: center;        /* Zentriert die Inhalte horizontal */
   height: 100%;               /* Damit der Container den gesamten vertikalen Platz nutzt */
   text-align: center;         /* Stellt sicher, dass alle Texte in der Mitte sind */
+  align-self: center;
 }
 
 /* Überschrift */
@@ -34,19 +36,17 @@ body {
 
 /* Eingabefelder */
 .input-group {
-  width: 100%;          /* Breite der Eingabefelder */
   margin-bottom: 15px;
+  align-self: center;
 }
 
 .input-group label {
-  display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: white; /* Weißer Text für die Labels */
 }
 
 .input-group input {
-  width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
