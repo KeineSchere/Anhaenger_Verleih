@@ -1,6 +1,9 @@
 // src/RueckgabeMieter.js
 import React, { useState } from 'react';
 import './CSS/Rueckgabe_mieter.css';
+import Footer from './footer';
+import Sidebar from './Sidebar';
+
 
 const RueckgabeMieter = () => {
   // States für die Rückgabe-Protokoll-Daten
@@ -39,54 +42,36 @@ const RueckgabeMieter = () => {
   return (
     <div>
     <div className="app">
-      {/* Button zum Öffnen/Schließen der Seitenleiste */}
-      <button className="sidebar-toggle" onClick={toggleSidebar}>
-        ☰
-      </button>
-
-      {/* Seitenleiste */}
-      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-        <nav>
-          <ul>
-            <li></li>
-            <li><a href="home">Home</a></li>
-            <li><a href="rueckgabe">Rückgabe</a></li>
-            <li><a href="mieten">Mieten</a></li>
-            <li><a href="sonstiges">Sonstiges</a></li>
-          </ul>
-        </nav>
-      </div>
+      <Sidebar />
       </div>
     <div className="rueckgabe-container">
       <h1>Rückgabeprotokoll für PKW-Anhänger</h1>
 
       <h2>Mieter</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="mieter-info">
           <label>Vollständiger Name:</label>
-          <br /><p1>Max Mustermann</p1>
+          <span>Max Mustermann</span>
         </div>
 
-        <div>
+        <div className="mieter-info">
           <label>Adresse:</label>
-          <br /><p1>Musterstraße 1</p1>
+          <span>Musterstraße 1</span>
         </div>
 
-        <div>
+        <div className="mieter-info">
           <label>Telefonnummer:</label>
-          <br /><p1>000</p1>
+          <span>000</span>
         </div>
 
-        <div>
+        <div className="mieter-info">
           <label>Führerschein-Nr. / Personalausweis-Nr.:</label>
-          <br /><p1>DE1213</p1>
+          <span>DE1213</span>
         </div>
-
-        <div className="anhänger-container">
-          <h3>Ihre gemieteten Anhänger</h3>
+        <h3>Ihre gemieteten Anhänger</h3>
+        <div className="anhänger-container1">
           <div className="kachel" onClick={toggleDetails}>
-            <h4>Fahrrad-Transport-Anhänger</h4>
-            <p2>Klicken für Details</p2>
+            <h4>Großanhänger</h4>
           </div>
 
           {showAnhängerDetails && (
@@ -121,12 +106,7 @@ const RueckgabeMieter = () => {
           )}
         </div>
       </form>
-      <footer className="footer">
-        <ul>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/agb">AGB</a></li>
-        </ul>
-      </footer>
+      <Footer/>
     </div>
     </div>
   );

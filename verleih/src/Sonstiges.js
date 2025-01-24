@@ -1,7 +1,8 @@
 //Sonstiges
 import React, { useState } from "react";
 import Footer from'./footer.js';
-import './CSS/Home.css';
+import './CSS/Sonstiges.css';
+import Sidebar from "./Sidebar.js";
 
 const Startseite = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -11,24 +12,9 @@ const Startseite = () => {
 
 return (
     <div>
-    <div className="app">
-      {/* Button zum Öffnen/Schließen der Seitenleiste */}
-      <button className="sidebar-toggle" onClick={toggleSidebar}>
-        ☰
-      </button>
-
-      {/* Seitenleiste */}
-      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-        <nav>
-          <ul>
-            <li></li>
-            <li><a href="home">Home</a></li>
-            <li><a href="rueckgabe">Rückgabe</a></li>
-            <li><a href="mieten">Mieten</a></li>
-            <li><a href="sonstiges">Sonstiges</a></li>
-          </ul>
-        </nav>
-      </div>
+    <Sidebar/>
+    <div className="APP">
+      <img src="./meme2.png" className="down_image"/>
       </div>
       <Footer />
     </div>

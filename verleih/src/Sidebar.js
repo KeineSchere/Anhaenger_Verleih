@@ -19,10 +19,16 @@ const Sidebar = () => {
         <nav>
           <ul>
             <li></li>
-            <li><a href="home">Home</a></li>
-            <li><a href="rueckgabe">Rückgabe</a></li>
-            <li><a href="mieten">Mieten</a></li>
-            <li><a href="sonstiges">Sonstiges</a></li>
+            <dev className="sidebar_value">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/rueckgabe">Rückgabe</a></li>
+            <li><a href="/mieten">Mieten</a></li>
+            <li><a href="/sonstiges">Sonstiges</a></li>
+            <li><a href="/einstellungen">Einstellungen</a></li>
+            <li><a href="/rueckgabe_intern">Mitarbeiter POV</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            </dev>
           </ul>
         </nav>
       </div>

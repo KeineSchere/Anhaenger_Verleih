@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CSS/Agb.css';  // Optional: Styling für die AGB-Seite
 import Sidebar from './Sidebar';
+import Footer from './footer';
 
 const AGB = () => {
   return (
@@ -20,13 +21,8 @@ const AGB = () => {
     <br /> Ihre Daten werden grundlos erhoben.
     <br />
     <br /> Stand: Januar 2025</p>
-      </div>
-            {/* Fußzeile außerhalb des Containers */}
-            <footer className="footer">
-        <ul>
-          <li><a href="/impressum">Impressum</a></li>
-        </ul>
-      </footer>
+    </div>
+      <Footer/>  
     </div>
     </div>
   );

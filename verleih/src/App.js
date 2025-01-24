@@ -10,6 +10,10 @@ import Rueckgabe from './Rueckgabe_mieter.js';
 import Rueckgabe_Ver from './Rueckgabe_vermieter.js';
 import Mieten from './Mieten.js';
 import Sonstiges from './Sonstiges.js';
+import Zubehoer from './zubehoer.js';
+import Einstellungen from './Einstellungen.js';
+import Kasse from './Kasse.js';
+import NotFound from './NotFound.js'
 
 function App() {
   return (
@@ -26,7 +30,12 @@ function App() {
           <Route path="/rueckgabe" element={<Rueckgabe />} />  
           <Route path="/rueckgabe_intern" element={<Rueckgabe_Ver />} />  
           <Route path="/mieten" element={<Mieten />} />
+          <Route path="/mieten/zubehoer" element={<Zubehoer />} />
+          <Route path="/mieten/kasse" element={<Kasse />} />
+          <Route path="/einstellungen" element={<Einstellungen />} />
           <Route path="/sonstiges" element={<Sonstiges />} />
+          <Route path="/rueckgabe_intern" element={<Rueckgabe_Ver />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
