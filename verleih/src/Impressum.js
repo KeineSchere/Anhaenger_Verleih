@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CSS/Impressum.css';  // Optional: Styling für die AGB-Seite
 import Sidebar from './Sidebar';
+import Footer from './footer';
 
 const AGB = () => {
   return (
@@ -9,19 +10,14 @@ const AGB = () => {
     <div className="agb-container">
       <h1>Impressum</h1>
       <div className="agb-content">
-        <p>Heinz Huber Anhängervermietung
-        <br />Kirchstrasse 6, 
-        <br />D-85104 Pförring-Dötting
-        <br />Tel. 0176/51571949
-        <br />info@fahrrad-transport-anhaenger.de
+        <p>Muster Anhängervermietung
+        <br />Musterstraße 1, 
+        <br />D-12345
+        <br />Tel. 0123/123456789
+        <br />info@anhängerverleih.de
         <br /> Stand: Januar 2025</p>
       </div>
-            {/* Fußzeile außerhalb des Containers */}
-            <footer className="footer">
-        <ul>
-          <li><a href="/agb">AGB</a></li>
-        </ul>
-      </footer>
+      <Footer/>
     </div>
     </div>
   );
