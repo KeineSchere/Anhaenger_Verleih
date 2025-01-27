@@ -140,3 +140,8 @@ body {
   .h3 {
     text-align: center;
   }
+
+  textarea{
+    resize: vertical;
+  }
+  

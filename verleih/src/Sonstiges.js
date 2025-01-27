@@ -1,8 +1,8 @@
 //Sonstiges
 import React, { useState } from "react";
-import Footer from'./footer.js';
+import Footer from'./CSS/utils/footer.js';
 import './CSS/Sonstiges.css';
-import Sidebar from "./Sidebar.js";
+import Sidebar from "./CSS/utils/Sidebar.js";
 
 const Startseite = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);

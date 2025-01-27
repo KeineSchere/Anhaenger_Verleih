@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Footer from'./footer.js';
+import Footer from'./CSS/utils/footer.js';
 import './CSS/Login.css'; // Optionales CSS für das Styling
 
 function Login() {

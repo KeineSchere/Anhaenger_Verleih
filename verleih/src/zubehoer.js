@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CSS/Zubehoer.css';
 
-import Sidebar from './Sidebar';
-import Footer from './footer';
+import Sidebar from './CSS/utils/Sidebar';
+import Footer from './CSS/utils/footer';
 
 const Zubehoer = () => {
   const initialZubehoerListe = [

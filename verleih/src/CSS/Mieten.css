@@ -110,3 +110,8 @@ body {
   .close:hover {
     background-color: #0056b3; /* Dunklerer Blauton beim Hover */
   }
+
+  .anhänger-container{
+    align-items: center;
+    justify-content: center;
+  }
