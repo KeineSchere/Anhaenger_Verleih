@@ -14,6 +14,8 @@ import Zubehoer from './zubehoer.js';
 import Einstellungen from './Einstellungen.js';
 import Kasse from './Kasse.js';
 import NotFound from './NotFound.js'
+import Vermietet_Dashboard from './Vermietet_Dashboard.js';
+import Einstellungen_intern from './einstellungen_intern.js'
 
 function App() {
   return (
@@ -34,7 +36,10 @@ function App() {
           <Route path="/mieten/kasse" element={<Kasse />} />
           <Route path="/einstellungen" element={<Einstellungen />} />
           <Route path="/sonstiges" element={<Sonstiges />} />
+          {/*Mitarbeiter Ansich*/}
           <Route path="/rueckgabe_intern" element={<Rueckgabe_Ver />} />
+          <Route path="/vermietet" element={<Vermietet_Dashboard />} />
+          <Route path="/einstellungen_intern" element={<Einstellungen_intern />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

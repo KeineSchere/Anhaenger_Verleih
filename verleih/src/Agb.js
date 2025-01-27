@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CSS/Agb.css';  // Optional: Styling für die AGB-Seite
-import Sidebar from './Sidebar';
-import Footer from './footer';
+import Sidebar from './CSS/utils/Sidebar';
+import Footer from './CSS/utils/footer';
 
 const AGB = () => {
   return (

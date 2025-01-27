@@ -77,7 +77,6 @@ textarea {
     border: 1px solid #444;
     border-radius: 8px;
     font-size: 1rem;
-    resize: none; /* Verhindert das Resize */
     display: block; /* Block-Element, um es zentrieren zu können */
     margin-left: auto;
     margin-right: auto; /* Zentriert die Textarea */

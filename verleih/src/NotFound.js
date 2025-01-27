@@ -1,7 +1,7 @@
 import React from 'react';
 import './CSS/NotFound.css';
-import Footer from './footer';
-import Sidebar from './Sidebar';
+import Footer from './CSS/utils/footer';
+import Sidebar from './CSS/utils/Sidebar';
 
 const NotFound = () => {
   return (

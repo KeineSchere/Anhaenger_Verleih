@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import './CSS/Rueckgabe.css';
+import Sidebar from './CSS/utils/Sidebar_intern';
 
 const RueckgabeVermieter = () => {
-  const [vermieterName, setVermieterName] = useState('');
-  const [adresse, setAdresse] = useState('');
-  const [telefon, setTelefon] = useState('');
-  const [email, setEmail] = useState('');
   const [zustandBestätigung, setZustandBestätigung] = useState('');
   const [schadenStatus, setSchadenStatus] = useState('');
 
@@ -15,6 +12,8 @@ const RueckgabeVermieter = () => {
   };
 
   return (
+    <div>
+    <Sidebar/>
     <div className="rueckgabe-container">
       <h1>Rückgabeprotokoll für PKW-Anhänger</h1>
     
@@ -23,8 +22,8 @@ const RueckgabeVermieter = () => {
           <div>
             <label>Vermieter Name:</label>
             <textarea
-              value={vermieterName} 
-              onChange={(e) => setVermieterName(e.target.value)} 
+              value=""
+              readOnly
               placeholder="Vermieter Name" 
             />
           </div>
@@ -32,8 +31,8 @@ const RueckgabeVermieter = () => {
           <div>
             <label>Adresse:</label>
             <textarea 
-              value={adresse} 
-              onChange={(e) => setAdresse(e.target.value)} 
+              value="" 
+              readOnly
               placeholder="Adresse des Vermieters"
             />
           </div>
@@ -41,8 +40,8 @@ const RueckgabeVermieter = () => {
           <div>
             <label>Telefon:</label>
             <textarea 
-              value={telefon} 
-              onChange={(e) => setTelefon(e.target.value)} 
+              value=""
+              readOnly
               placeholder="Telefonnummer" 
             />
           </div>
@@ -50,8 +49,8 @@ const RueckgabeVermieter = () => {
           <div>
             <label>E-Mail:</label>
             <textarea
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
+              value=""
+              readOnly
               placeholder="E-Mail Adresse" 
             />
           </div>
@@ -111,6 +110,7 @@ const RueckgabeVermieter = () => {
           <li><a href="/agb">AGB</a></li>
         </ul>
       </footer>
+    </div>
     </div>
   );
 };

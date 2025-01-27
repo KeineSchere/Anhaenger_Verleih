@@ -1,8 +1,8 @@
 // src/RueckgabeMieter.js
 import React, { useState } from 'react';
 import './CSS/Rueckgabe_mieter.css';
-import Footer from './footer';
-import Sidebar from './Sidebar';
+import Footer from './CSS/utils/footer';
+import Sidebar from './CSS/utils/Sidebar';
 
 
 const RueckgabeMieter = () => {
@@ -51,27 +51,44 @@ const RueckgabeMieter = () => {
       <form onSubmit={handleSubmit}>
         <div className="mieter-info">
           <label>Vollständiger Name:</label>
-          <span>Max Mustermann</span>
+          <textarea
+              value="Max Mustermann" 
+              readOnly
+              placeholder="Vollständiger Name" 
+            />
         </div>
 
         <div className="mieter-info">
           <label>Adresse:</label>
-          <span>Musterstraße 1</span>
+          <textarea
+              value="Musterstraße 123, 12345 Musterstadt"
+              readOnly
+              placeholder="Adresse" 
+            />
         </div>
 
         <div className="mieter-info">
           <label>Telefonnummer:</label>
-          <span>000</span>
+          <textarea
+              value="000" 
+              readOnly
+              placeholder="Telefonnummer" 
+            />
         </div>
 
         <div className="mieter-info">
           <label>Führerschein-Nr. / Personalausweis-Nr.:</label>
-          <span>DE1213</span>
+          <textarea
+              value="DE 2084 7284 / 1234567890" 
+              readOnly
+              placeholder="Führerschein-Nr. / Personalausweis-Nr." 
+            />
         </div>
         <h3>Ihre gemieteten Anhänger</h3>
         <div className="anhänger-container1">
           <div className="kachel" onClick={toggleDetails}>
-            <h4>Großanhänger</h4>
+            <h2>Großanhänger</h2>
+            <h2>LDK-123-AA</h2>
           </div>
 
           {showAnhängerDetails && (

@@ -1,8 +1,8 @@
 import React, { useState, Link } from "react";
 import "./CSS/Mieten.css";
 import { useNavigate } from "react-router-dom";
-import Footer from "./footer";
-import Sidebar from "./Sidebar";
+import Footer from "./CSS/utils/footer";
+import Sidebar from "./CSS/utils/Sidebar";
 
 const App = () => {
   const [selectedTrailer, setSelectedTrailer] = useState(null);

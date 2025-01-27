@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CSS/Einstellungen.css';
 import Footer from './CSS/utils/footer';
-import Sidebar from './CSS/utils/Sidebar';
+import Sidebar from './CSS/utils/Sidebar_intern';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -80,21 +80,6 @@ function App() {
             type="email"
             name="email"
             value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Personalausweisnummer / Führerscheinnummer:</label>
-          <input
-            type="text"
-            name="idNumber"
-            value={formData.idNumber}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="licenseNumber"
-            value={formData.licenseNumber}
             onChange={handleChange}
           />
         </div>

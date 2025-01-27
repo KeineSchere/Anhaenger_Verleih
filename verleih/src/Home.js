@@ -1,7 +1,7 @@
 // src/Startseite.js
 import React, { useState } from "react";
-import Footer from'./footer.js';
-import Sidebar from "./Sidebar";
+import Footer from'./CSS/utils/footer.js';
+import Sidebar from "./CSS/utils/Sidebar.js";
 import { useNavigate } from 'react-router-dom'; // Ändere useHistory zu useNavigate
 import './CSS/Home.css';
 
