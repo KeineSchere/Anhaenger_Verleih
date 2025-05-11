@@ -1,3 +1,3 @@
 # Anhaenger_Verleih
-Anhaenger Verleig Schule
-School Project ONLY working Frontend
+Anhaenger Verleih 
+School Project / ONLY working Frontend
